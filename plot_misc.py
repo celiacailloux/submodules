@@ -5,7 +5,7 @@ Created on Sun Apr 28 12:43:58 2019
 
 @author: celiacailloux
 """
-import OSfunctions as OSfunc
+import file_manage_misc as OSfunc
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 import numpy as np
@@ -14,7 +14,7 @@ from datetime import date
 from scipy.integrate import trapz
 from matplotlib.ticker import AutoMinorLocator, AutoLocator, MultipleLocator, \
     LogLocator, SymmetricalLogLocator,FormatStrFormatter,  ScalarFormatter
-from ColorFunctions import *
+from plot_colors import *
 import math
 
 " ___________________________________________________________ GLOBAL SETTINGS "

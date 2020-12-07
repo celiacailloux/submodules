@@ -6,6 +6,7 @@ Created on Thu May  2 23:02:35 2019
 @author: celiacailloux
 """
 import os
+import shutil
 
 def join_paths(path_part_one, path_part_two, path_part_three = '', path_part_four = ''):
     """
@@ -205,6 +206,21 @@ def ECLab_find_txt_files(rootdir, exp_type):
     if not path_files:
         print('!!!! Error !!!! \nCouldn\'t find experiment types {0} in folder {1}'.format(exp_type, rootdir))
     return path_files
+    
+# ----------
+def  move_file_from_one_dir_to_another(src):
+    src_files = os.listdir(src)
+    for file_name in src_files:
+        full_file_name = os.path.join(src, file_name)
+        if (os.path.isfile(full_file_name)):
+            shutil.copy(full_file_name, dest)
+        
+##PYTHONPATH=/home/alvas/python/lib:/usr/local/python/lib /home/alvas/scripts/bar.py
+#cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/
+
+#import sys
+##sys.path.append("path/to/Modules")
+#print(sys.path)
 
 
             
