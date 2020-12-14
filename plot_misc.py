@@ -7,6 +7,8 @@ A package that contains usefull functions for plotting.
 Split into different sections and you can also find
 instrument specific section
 
+Test: can we update submodules in XRD?
+
 """
 from submodules import file_manage_misc as OSfunc
 from submodules import plot_colors
