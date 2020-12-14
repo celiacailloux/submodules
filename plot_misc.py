@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr 28 12:43:58 2019
-
 @author: celiacailloux
+
+A package that contains usefull functions for plotting.
+Split into different sections and you can also find
+instrument specific section
+
 """
 from submodules import file_manage_misc as OSfunc
 from submodules import plot_colors
