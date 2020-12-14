@@ -45,17 +45,17 @@ def color_maps(color_map = None):
         color = plt.get_cmap('tab10')
     elif color_map == 'jkib':
         color_list_hex = ['#0675a1','#0086a7','#00969d','#00a383','#28ad5e','#7ab332','#bcb100','#ffa600']
-        color = make_color_map_hex_to_rgb( color_list_hex =  color_list_hex, test_color_list = False)
+        color = plot_colors.make_color_map_hex_to_rgb( color_list_hex =  color_list_hex, test_color_list = False)
     elif color_map == 'inv_jkib':
         color_list_hex = ['#0675a1','#0086a7','#00969d','#00a383','#28ad5e','#7ab332','#bcb100','#ffa600']
-        color = make_color_map_hex_to_rgb( color_list_hex = color_list_hex[::-1], test_color_list = False)
+        color = plot_colors.make_color_map_hex_to_rgb( color_list_hex = color_list_hex[::-1], test_color_list = False)
     elif color_map == 'FE_gb':
         color_list_hex = ['#5fb35b', '#4ac195', '#5ecbc2', '#8ed1dc', '#5993ad', '#32597a', '#172345']
-        color = make_color_map_hex_to_rgb( color_list_hex = color_list_hex[::-1], test_color_list = False)
+        color = plot_colors.make_color_map_hex_to_rgb( color_list_hex = color_list_hex[::-1], test_color_list = False)
         # https://learnui.design/tools/data-color-picker.html#divergent
     else:
         print('color map not recognized (see module: PlottingFunctions)')
-        color = make_color_map_hex_to_rgb['b', 'g','r','c','m','y','k']
+        color = plot_colors.make_color_map_hex_to_rgb['b', 'g','r','c','m','y','k']
     return color
 
 def markers():
