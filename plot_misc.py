@@ -93,7 +93,7 @@ def global_lim(ax, x_lim, y_lim):
     ax.set_ylim(y_lim)
     
 def global_savefig(fig, plt_title, subdirectory = None, addcomment = None):
-    directory = 'Figures'
+    directory = 'figures'
     OSfunc.create_directory(directory)
     #save_title = directory + '/' + plt_title + '_' + addcomment
     if subdirectory:  
