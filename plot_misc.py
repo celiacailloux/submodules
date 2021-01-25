@@ -14,6 +14,8 @@ from submodules import file_manage_misc as OSfunc
 from submodules import plot_colors
 
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure, plot, title, legend, xlabel, ylabel, \
+    show, savefig, close, subplots
 import matplotlib.ticker as mtick
 import numpy as np
 import os
@@ -24,7 +26,8 @@ from matplotlib.ticker import AutoMinorLocator, AutoLocator, MultipleLocator, \
 
 import math
 
-" ___________________________________________________________ GLOBAL SETTINGS "
+# %%
+# Global plot settings
 
 def color_maps(color_map = None):
     if color_map == 'greenblue':
@@ -109,7 +112,7 @@ def global_savefig(fig, plt_title, subdirectory = None, addcomment = None):
             save_title = directory + '/' + plt_title        
     #fig.savefig(save_title + '.png',bbox_inches='tight', dpi=200)
     #fig.set_size_inches(6, 4)
-    fig.savefig(save_title + '.png',bbox_inches='tight', dpi=150)
+    fig.savefig(save_title + '.png',bbox_inches='tight', dpi=150)    
 
 def global_legendbox(ax, location = 'upper left', loc = 'to right' ):
     if loc == 'bottom':
