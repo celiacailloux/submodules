@@ -34,3 +34,10 @@ Next, is a specifikation or subcategory, e.g., *api_Dropbox, api_OneDrive*. For 
 - scipy
 - os
 - sys
+- pickle
+
+## Contact and Contribution
+
+Do not hesitate to contact me at *celiacailloux@gmail.com* if you would like an introduction or if maybe you find this inspirational and want to start coding yourself?
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
