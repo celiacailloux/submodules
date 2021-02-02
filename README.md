@@ -25,3 +25,12 @@ Next, is a specifikation or subcategory, e.g., *api_Dropbox, api_OneDrive*. For 
 - category2_subcategory1
 - category2_subcategory2
 - category2_misc
+
+## Packages
+
+- pandas
+- matplotlib
+- lmfit
+- scipy
+- os
+- sys
