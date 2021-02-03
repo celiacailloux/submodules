@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# ----------------------------------------------------------------------------
-# This module contains specific plot functions used in ML
-# 
-# Tags: pyplot, subplots, all combinations
-#
-# @author: celiacailloux
-# celiacailloux@gmail.com
-# 
-# Created on Mon Jan 25 2021
-# ----------------------------------------------------------------------------
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # ----------------------------------------------------------------------------
 # This modules contains functions for plotting using submodules
@@ -35,7 +22,8 @@ import numpy as np
 
 
 def subplot_all_combinations(X, y, 
-                             classNames, attributeNames,
+                             classNames, 
+                             plot_labels,
                              n_attributes, 
                              n_classes, 
                              fig_title = None):
@@ -75,8 +63,8 @@ def subplot_all_combinations(X, y,
             axs.flatten()[k].plot(X_attribute_i, X_attribute_j, 'o', label = classNames[c])
             # axs.flatten()[k].set_aspect('equal')    
        
-        axs.flatten()[k].set_xlabel(attributeNames[i])
-        axs.flatten()[k].set_ylabel(attributeNames[j])
+        axs.flatten()[k].set_xlabel(plot_labels[i])
+        axs.flatten()[k].set_ylabel(plot_labels[j])
         k += 1   
     # add legend and use tight_layout
     axs[0,0].legend(bbox_to_anchor=(-1, 1), loc='upper left', borderaxespad=0.)
