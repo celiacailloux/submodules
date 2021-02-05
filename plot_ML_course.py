@@ -11,8 +11,9 @@
 # ----------------------------------------------------------------------------
 
 # standard modules
-from matplotlib.pyplot import figure, plot, title, legend, xlabel, ylabel, \
-    show, savefig, close, subplots
+from matplotlib.pyplot import (figure, plot, title, legend, xlabel, ylabel, \
+                               show, savefig, close, subplots)
+from os.path import basename, splitext, join
 from itertools import combinations    
 from math import ceil, floor
 import numpy as np
@@ -70,5 +71,30 @@ def subplot_all_combinations(X, y,
     axs[0,0].legend(bbox_to_anchor=(-1, 1), loc='upper left', borderaxespad=0.)
     fig.tight_layout() 
     show()
+    
+def save_figure_as_script_title(exerciseName, comment):
+    """
+    This function saves the 
+    Parameters
+    ----------
+    exerciseName : str
+        name of the script where the figure is plotted that will be used for
+        the figure file title
+    comment : str
+        additional comment to add to the figure title.
+
+    Returns
+    -------
+    None.
+
+    """
+    # Save figure in the 'figures' directory
+    # close('all')    
+    saveFigTitle    = exerciseName + '_' + comment
+    saveFigPath     = join('../figures/',saveFigTitle)
+    savefig(saveFigPath, dpi = 200)
+    print('\'{}\' saved as figure'.format(saveFigTitle))      
+    
+    
          
 
